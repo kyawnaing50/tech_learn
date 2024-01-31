@@ -1,0 +1,25 @@
+default_platform :ios
+
+platform :ios do
+    lane :build do |options|
+        env = options[:env]
+        target = 'main.dart'
+        if env == 'dev'
+            target = 'main_dev.dart'
+        end
+        sh("flutter build ios --flavor #{env} -t lib/#{target} —-dart-define-from-file=.envs/#{env}.json")
+    end
+end
+
+platform :android do
+    lane :build do |options|
+        env = options[:env]
+        target = 'main.dart'
+        if env == 'dev'
+            target = 'main_dev.dart'
+        end
+        sh("flutter build appbundle --flavor #{env} -t lib/#{target} —-dart-define-from-file=.envs/#{env}.json")
+        #bundle to the Google Play Store
+        #playstore(track: 'internal', package_name: 'com.example.app', aab: 'build/app/outputs/bundle/release/app.aab', skip_upload_apk: true)
+    end
+end
