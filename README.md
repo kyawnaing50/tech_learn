@@ -30,4 +30,10 @@ To run _**fastlane**_
 
 - `bundle exec fastlane ios {lanename} env:{dev/qa/prod}`
 
+To generate debug.jks
+-   `keytool -importkeystore -srckeystore /Users/YZT/debug.jks -destkeystore /Users/YZT/debug.jks -deststoretype pkcs12`
+
+To debug 
+- `flutter run lib/main_dev.dart --flavor=dev --dart-define-from-file=.envs/dev.json`
+
 # techlearn-mobile

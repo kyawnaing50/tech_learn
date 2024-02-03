@@ -31,7 +31,7 @@ class _SplashPageState extends State<SplashPage> {
             ),
             notLoggedin: () => Navigator.pushReplacementNamed(
               context,
-              TechLearnRoutes.login,
+              TechLearnRoutes.onboarding,
             ),
             orElse: () => -1,
           );

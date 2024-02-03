@@ -11,5 +11,7 @@ void main() async {
     anonKey: Env.supabaseAnonKey,
   );
 
-  runApp(const TechLearnApp());
+  runApp(
+    const TechLearnApp(),
+  );
 }
