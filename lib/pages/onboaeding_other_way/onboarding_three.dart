@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../config/tech_learn_colors.dart';
-import '../config/tech_learn_text_styles.dart';
-import '../widgets/WelcomePageWidget/welcome_hero_widget.dart';
-import '../widgets/WelcomePageWidget/welcome_title_widget.dart';
-import '../widgets/tech_learn_custom_button_widget.dart';
+import '../../config/tech_learn_colors.dart';
+import '../../config/tech_learn_text_styles.dart';
+import '../../widgets/WelcomePageWidget/welcome_hero_widget.dart';
+import '../../widgets/WelcomePageWidget/welcome_title_widget.dart';
+import '../../widgets/tech_learn_custom_button_widget.dart';
 
 class OnboardingThree extends StatelessWidget {
   const OnboardingThree({super.key});

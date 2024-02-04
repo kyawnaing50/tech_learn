@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:techlearn/pages/home_page.dart';
 import 'package:techlearn/pages/omboarding_page.dart';
-import 'package:techlearn/pages/onboarding_two.dart';
+import 'package:techlearn/pages/onboaeding_other_way/onboarding_two.dart';
 import 'package:techlearn/pages/login_page.dart';
-import 'package:techlearn/pages/onboarding_three.dart';
+import 'package:techlearn/pages/onboaeding_other_way/onboarding_three.dart';
 import 'package:techlearn/pages/splash_page.dart';
-import '../pages/onboarding_one.dart';
+import '../pages/onboaeding_other_way/onboarding_one.dart';
 
 class TechLearnRoutes {
   static const splash = '/splash';

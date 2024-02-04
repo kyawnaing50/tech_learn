@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../config/tech_learn_colors.dart';
-import '../config/tech_learn_text_styles.dart';
-import '../widgets/WelcomePageWidget/welcome_hero_widget.dart';
-import '../widgets/WelcomePageWidget/welcome_title_widget.dart';
-import '../widgets/tech_learn_custom_button_widget.dart';
+import '../../config/tech_learn_colors.dart';
+import '../../config/tech_learn_text_styles.dart';
+import '../../widgets/WelcomePageWidget/welcome_hero_widget.dart';
+import '../../widgets/WelcomePageWidget/welcome_title_widget.dart';
+import '../../widgets/tech_learn_custom_button_widget.dart';
 
-class OnboardingTwo extends StatelessWidget {
-  const OnboardingTwo({super.key});
+class OnboardingOne extends StatelessWidget {
+  const OnboardingOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +29,9 @@ class OnboardingTwo extends StatelessWidget {
                 ),
                 WelcomeHeroWidget(
                   imgUrl: "assets/images/welcome.png",
-                  textTitle: "Interacting Learning",
-                  description: TechLearnTextStyles.interactiveLearingText,
-                  detectPage: 2,
+                  textTitle: "Welcome",
+                  description: TechLearnTextStyles.welcomeLearingText,
+                  detectPage: 1,
                 ),
               ],
             ),
